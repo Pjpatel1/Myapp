@@ -54,7 +54,7 @@ code {
     /* font-style: ragular; */
     font-size: 4cm;
     color: #97a0a7;
-    padding-top: 100px;
+    padding-top: 20px;
     opacity: unset !important;
     text-align: center;
 
@@ -121,17 +121,55 @@ code {
     animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
     transform: translate3d(0, 0, 0);
   } */
-  .Our
+  .our
   {
-    margin-top: 3cm;
-    margin-left: 2cm;
-    width: 500px;
-    height: 1000px;
+    margin-top: 2cm;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: auto;
+    height: 60px;
     font-size: 1cm;
     background-color: transparent;
-    text-align: left ;
+    text-align: center ;
     color: aliceblue;
   }
+  .emai
+  {
+    background-color: transparent;
+    width:100%;
+    text-align: center;
+  }
+  .em
+  {
+
+      border: none;
+      width: 600px;
+      background: burlywood;
+      height: 50px;
+      
+  }
+  button
+  {
+  border: none;
+  color: rgb(19, 23, 71);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer
+  }
+  .quote
+  {
+    text-align: center;
+    font-size: large;
+    padding-top: 40px;
+
+    padding-bottom: 40px;
+  }
+
   .office
   {
     height: 10cm;
@@ -158,7 +196,7 @@ code {
   .link
   {
     height: 55x;
-     width: 1920px;
+     width: inherit;
      background-color: #fff;
   }
   .plan1
@@ -176,7 +214,7 @@ code {
    {
      
      font-size: 70px;
-     margin: auto 0;
+     margin-left: 8cm;
      padding-left: 500px;
 
    }
@@ -184,11 +222,17 @@ code {
   .fa.fa-envelope
   {
     font-size: 70px;
-    padding-left: 500px;
+    margin-left: 10px;
   }
   .fa.fa-envelope:hover
   {
-    transform: rotate(45deg);
+    transform: translateY(-4px);
+    transition:0.3s;
+  }
+  .fa.fa-instagram:hover
+  {
+    transform: translateY(-4px);
+    transition:0.3s;
   }
   #button
   {
@@ -236,7 +280,7 @@ code {
     width: 100%;
     height: 10px;
     background-repeat:repeat-x;
-    margin-top: 9.5%;
+    margin-top: 31.5%;
     background: linear-gradient(to right, 
     #eb5252, 
     #f78f2f,
@@ -259,6 +303,12 @@ code {
         font-weight: bold;
       }
   
+  h3
+   {
+        margin-top: 0%;
+        padding-top: 2%;
+        text-align: center;
+      }
   /* :root {
     --v1: #be91c6;
     --v2: #8a65cc;

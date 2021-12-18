@@ -1,5 +1,6 @@
 
-import React, { useState } from 'react';
+//import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import styled, {ThemeProvider} from 'styled-components';
 import { lightTheme, darkTheme, Globalstyles } from './comps/theme';
@@ -8,11 +9,33 @@ import { lightTheme, darkTheme, Globalstyles } from './comps/theme';
 
 const StyledApp = styled.div``;
  function App() {
-  const [theme, setTheme] = useState('darkTheme');
+  
+  const [theme, setTheme] = useState('lightTheme');
+  var d = new Date();
+  var currentHour = d.getHours();
+  console.log(currentHour);
+  useEffect(() => { 
+    //theme === "lightTheme" ? setTheme("darkTheme"):setTheme("lightTheme");
+  
 
-  const themeToggler = () => { 
-    theme === "lightTheme" ? setTheme("darkTheme"):setTheme("lightTheme");
-  }
+      if(currentHour >=6  && currentHour <= 17)
+      {
+        setTheme("lightTheme");
+        console.log("hii i am working");
+      }
+      else 
+      {
+        setTheme("darkThme");
+        console.log("hii i am also working");
+      }
+  });
+  // while(1)
+  // {
+  //   themeToggler();
+  //   console.log("i am while");
+  //   break
+  // }
+ // componentDidMount(themeToggler)
   return (
       // <div className="container">
       //     <Navbar />
@@ -21,40 +44,34 @@ const StyledApp = styled.div``;
         <Globalstyles/>
         <StyledApp>
         <div className="all">
+        <div className="lamp">
+                      Clicktos
+                  </div>
               <div className="background">
+                
             
-                      <div className = "nav">
-                          <span className="blog">Home</span>
-                          <span className="service">service</span>
-                          <span className="feature">feature</span>
-                      </div>
               
-                  <div class ="slogan">
+                  <div className ="slogan">
                       Be Creative Stay Curious
                   </div>   
                   
-                  <div class="lamp">
-                      Lampros
+                  
+                  
+                  <div className="rainbow">
                   </div>
-                  <button onClick={() => themeToggler()}> Theme </button>
-                  <div class="rainbow">
+                  <div className='our'>
+                    Everyone those who thinks Innovative they're invited.
                   </div>
-                  <div className='Our'>
-                    We'll make your website for free because we are passionate about devloping new pages.
-                    I have you liked this one.
-                    it one of the best work done by me.
+                  <div className='quote'>
+                  Reading one line that encapsulates our love for photography and art is powerful<br/> and often reminds us of the importance of documenting moments with our cameras
                   </div>
-                  <div className='office'>
+                  <div className='emai'>
+                    <input type="email" className='em'/>
+                    <button>Subscribe</button>
                   </div>
-                  <div class = "plan">
-                    
-                  </div>
-                  <div className='plan1'>We are a team of experts who love growth. 
-                    Business innovation is our passion, and we want to help pu sh your company to the next level.
-                    We’ll be in touch with you after signing up to discuss what you’d like to see on your new website. After you pitch us your vision, we'll handle the rest.</div>
                   <div className='link'>
-                  <i class="fa fa-instagram" aria-hidden="true" ></i>
-                  <i class="fa fa-envelope"></i>
+                  <i className="fa fa-instagram" aria-hidden="true" ></i>
+                  <i className="fa fa-envelope"></i>
                   </div>
                   
 
