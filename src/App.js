@@ -22,6 +22,7 @@ const StyledApp = styled.div``;
       {
         setTheme("lightTheme");
         console.log("hii i am working");
+        console.log("codee is uploaded");
       }
       else 
       {
