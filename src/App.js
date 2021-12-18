@@ -18,7 +18,7 @@ const StyledApp = styled.div``;
     //theme === "lightTheme" ? setTheme("darkTheme"):setTheme("lightTheme");
   
 
-      if(currentHour >=6  && currentHour <= 17)
+      if(currentHour >=6  && currentHour <= 15)
       {
         setTheme("lightTheme");
         console.log("hii i am working");
@@ -53,23 +53,24 @@ const StyledApp = styled.div``;
             
               
                   <div className ="slogan">
-                      Be Creative Stay Curious
+                  Everyone those who thinks innovative they're invited.
                   </div>   
                   
-                  
+                  <div className='emai'>
+                    <input type="email" className='em'/>
+                    
+                  </div>
+                  <div className='butt'>
+                    <button>Subscribe</button>
+                    </div>
                   
                   <div className="rainbow">
                   </div>
-                  <div className='our'>
-                    Everyone those who thinks Innovative they're invited.
-                  </div>
+                  
                   <div className='quote'>
                   Reading one line that encapsulates our love for photography and art is powerful<br/> and often reminds us of the importance of documenting moments with our cameras
                   </div>
-                  <div className='emai'>
-                    <input type="email" className='em'/>
-                    <button>Subscribe</button>
-                  </div>
+                  
                   <div className='link'>
                   <i className="fa fa-instagram" aria-hidden="true" ></i>
                   <i className="fa fa-envelope"></i>
